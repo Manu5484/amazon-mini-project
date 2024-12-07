@@ -2,16 +2,20 @@ import { products_details } from '../data/products.js';
 
 
 export let cart=JSON.parse(localStorage.getItem('cart'));
+let ordersummaryelem=document.querySelector('.js-order-summay');
 
 if(!cart)
 {
-  cart=[
-    {
-      productId:'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
-      quantity:1,
-      deliveryid:'1'
-    },
-  ];  
+
+  ordersummaryelem.innerHTML='<h2>no items added<h2>';
+
+  // cart=[
+  //   {
+  //     productId:'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+  //     quantity:1,
+  //     deliveryid:'1'
+  //   },
+  // ];  
 }
 
 export function cartitem_to_localstorage()
