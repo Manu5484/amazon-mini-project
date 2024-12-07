@@ -1,8 +1,8 @@
 import { products_details } from '../data/products.js';
-
-
-export let cart=JSON.parse(localStorage.getItem('cart'));
 let ordersummaryelem=document.querySelector('.js-order-summay');
+
+
+export let cart=JSON.parse(localStorage.getItem('Cart'));
 
 if(!cart)
 {
@@ -20,7 +20,7 @@ if(!cart)
 
 export function cartitem_to_localstorage()
 {
-  localStorage.setItem('cart',JSON.stringify(cart));
+  localStorage.setItem('Cart',JSON.stringify(cart));
 }
 
 export function addtocart(productId){
