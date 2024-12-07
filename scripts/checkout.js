@@ -1,6 +1,6 @@
 import { products_details } from '../data/products.js';
 import { cart , remove_cartItem, cartitem_to_localstorage,updatedelivaryoption,addtocart } from '../data/cart.js';
-import '../data/cartoops.js' ;
+// import '../data/cartoops.js' ;
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js'
 import { deliveryoption,deliveryoptions } from '../data/deliveryoption.js';
 
