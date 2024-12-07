@@ -7,7 +7,7 @@ let ordersummaryelem=document.querySelector('.js-order-summay');
 if(!cart)
 {
 
-  ordersummaryelem.innerHTML='<h2>no items added<h2>';
+   ordersummaryelem.innerHTML='<h2>no items added<h2>';
 
   // cart=[
   //   {
